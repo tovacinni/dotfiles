@@ -163,7 +163,6 @@ export PATH=$PATH:$g3d/G3D10/bin:$g3d/G3D10/build/bin
 
 . "$HOME/.cargo/env"
 export UV_HTTP_TIMEOUT=120
-source "$HOME/.rye/env"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
