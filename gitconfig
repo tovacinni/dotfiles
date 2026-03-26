@@ -1,0 +1,11 @@
+[user]
+	email = tovacinni@gmail.com
+	name = tovacinni
+[alias]
+    pullall = "!f(){ git pull \"$@\" && git submodule update --init --recursive; }; f"
+    commit-gh = -c user.name='Towaki Takikawa' -c user.email='tovacinni@gmail.com' commit
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+    required = true
